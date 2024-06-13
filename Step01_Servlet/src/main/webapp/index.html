@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container">
+		<h1>인덱스 페이지 입니다</h1>
+		<ul>
+			<li><a href="${pageContext.request.contextPath }/test.jsp">Connection 객체 얻어오기 테스트</li>
+			<li><a href="${pageContext.request.contextPath }/member/list">회원 목록보기</a></li>
+			<li><a href="${pageContext.request.contextPath }/friend/list.jsp">친구 목록보기</a></li>
+		</ul>
+		
+		<form action="send" method="get">
+			<input type="text" name="msg" placeholder="할말 입력..."/>
+			<button type="submit">전송</button>
+		</form>
+		
+		
+		<br>
+		
+		<form action="/Step01_Servlet/send2" method="post">
+			<input type="text" name="msg" placeholder="할말 입력..."/>
+			<button type="submit">전송</button>
+		</form>
+		
+		<br>
+		
+		<form action="/Step01_Servlet/send.jsp" method="get">
+			<input type="text" name="msg" placeholder="할말 입력..."/>
+			<button type="submit">전송</button>
+		</form>
+		
+		
+	</div>
+</body>
+</html>
